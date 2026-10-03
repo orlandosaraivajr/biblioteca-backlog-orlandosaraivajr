@@ -1,0 +1,39 @@
+name: Estória de usuário
+description: Nova estória para o backlog
+labels: ["estória"]
+body:
+  - type: input
+    id: como
+    attributes:
+      label: Como (perfil de usuário)
+      placeholder: "leitor"
+    validations:
+      required: true
+  - type: input
+    id: quero
+    attributes:
+      label: Quero (ação)
+      placeholder: "renovar meu empréstimo pela internet"
+    validations:
+      required: true
+  - type: input
+    id: para
+    attributes:
+      label: Para (benefício)
+      placeholder: "não precisar ir à biblioteca"
+    validations:
+      required: true
+  - type: textarea
+    id: criterios
+    attributes:
+      label: Critérios de aceite (Dado / Quando / Então)
+      value: |
+        - Dado que ..., quando ..., então ...
+    validations:
+      required: true
+  - type: textarea
+    id: tarefas
+    attributes:
+      label: Tarefas
+      value: |
+        - [ ]
